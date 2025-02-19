@@ -285,7 +285,7 @@ function startServer() {
   setInterval(() => tick(), 1000);
   setInterval(() => updateLobbies(), 100);
 
-  initializeSecrets();
+  //initializeSecrets();
 
   const PORT = process.env.PORT || 3000;
   console.log(`Server will try to run on http://localhost:${PORT}`);

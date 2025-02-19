@@ -58,27 +58,27 @@ class Client {
       this.handleSinglePlayer.bind(this),
     );
 
-    const spModal = document.querySelector(
-      "single-player-modal",
-    ) as SinglePlayerModal;
-    spModal instanceof SinglePlayerModal;
-    document.getElementById("single-player").addEventListener("click", () => {
-      if (this.usernameInput.isValid()) {
-        spModal.open();
-      }
-    });
+    // const spModal = document.querySelector(
+    //   "single-player-modal",
+    // ) as SinglePlayerModal;
+    // spModal instanceof SinglePlayerModal;
+    // document.getElementById("single-player").addEventListener("click", () => {
+    //   if (this.usernameInput.isValid()) {
+    //     spModal.open();
+    //   }
+    // });
 
-    const hostModal = document.querySelector(
-      "host-lobby-modal",
-    ) as HostPrivateLobbyModal;
-    hostModal instanceof HostPrivateLobbyModal;
-    document
-      .getElementById("host-lobby-button")
-      .addEventListener("click", () => {
-        if (this.usernameInput.isValid()) {
-          hostModal.open();
-        }
-      });
+    // const hostModal = document.querySelector(
+    //   "host-lobby-modal",
+    // ) as HostPrivateLobbyModal;
+    // hostModal instanceof HostPrivateLobbyModal;
+    // document
+    //   .getElementById("host-lobby-button")
+    //   .addEventListener("click", () => {
+    //     if (this.usernameInput.isValid()) {
+    //       hostModal.open();
+    //     }
+    //   });
 
     this.joinModal = document.querySelector(
       "join-private-lobby-modal",
@@ -151,7 +151,7 @@ document.addEventListener("DOMContentLoaded", () => {
   new Client().initialize();
 });
 
-document.body.style.backgroundImage = `url(${backgroundImage})`;
+//document.body.style.backgroundImage = `url(${backgroundImage})`;
 
 function setFavicon(): void {
   const link = document.createElement("link");
